@@ -1,6 +1,13 @@
 server:
-  port: 9092
+  port: 8092
 
 spring:
   application:
     name: SpringBootConsumer
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my-group
+      auto-offset-reset: earliest
