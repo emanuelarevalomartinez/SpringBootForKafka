@@ -13,7 +13,7 @@ public class KafkaConsumerListener {
 
     @KafkaListener( topics = {"firstTopic"}, groupId = "my-group")
     public void listener(String message){
-        LOGGER.info("Mensaje Recibido, el mensaje es: " + message);
+        LOGGER.info(message);
     }
 
 }
